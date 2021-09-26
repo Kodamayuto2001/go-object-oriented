@@ -12,7 +12,7 @@ func sayhelloName(w http.ResponseWriter, r *http.Request) {
 	r.ParseForm()		//	urlが渡すオプションを解析します。POSTに対してはレスポンスパケットのボディを解析します（request body）
 	//	注意：もしParseFormメソッドがコールされなければ、以下のフォームのデータを取得することができません。
 	fmt.Println(r.Form)
-	fmt.Println("path", r.URL.Scheme)
+	fmt.Println("path", r.URL.Path)
 	fmt.Println("scheme", r.URL.Scheme)
 	fmt.Println(r.Form["url_long"])
 	for k, v := range r.Form {
