@@ -50,3 +50,13 @@ mysql> create table `members` (
     `password`  varchar(100) not null
 ) engine=InnoDB default charset=utf8;
 ```
+
+### テーブル一覧表示
+```
+mysql> show tables;
+```
+
+### レコード一覧表示
+```
+mysql> select * from TABLE_NAME;
+```
